@@ -1,0 +1,95 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://graficos/sheet.png" type="Texture" id=1]
+[ext_resource path="res://graficos/sheet_normal.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 8, 8 )
+
+[node name="Node2D" type="Node2D"]
+
+_sections_unfolded = [ "Pause", "Transform" ]
+
+[node name="left" type="Sprite" parent="." index="0"]
+
+texture = ExtResource( 1 )
+normal_map = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 112, 0, 16, 16 )
+_sections_unfolded = [ "Region", "Visibility" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="left" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Collision" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="left/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="center" type="Sprite" parent="." index="1"]
+
+editor/display_folded = true
+position = Vector2( 32, 0 )
+texture = ExtResource( 1 )
+normal_map = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 128, 0, 16, 16 )
+_sections_unfolded = [ "Region", "Visibility" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="center" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="center/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="botton" type="Sprite" parent="." index="2"]
+
+position = Vector2( 64, 0 )
+texture = ExtResource( 1 )
+normal_map = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 112, 16, 16, 16 )
+_sections_unfolded = [ "Region", "Visibility" ]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="botton" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Collision" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="botton/StaticBody2D" index="0"]
+
+shape = SubResource( 1 )
+
+[node name="rock" type="Sprite" parent="." index="3"]
+
+position = Vector2( 96, 0 )
+texture = ExtResource( 1 )
+normal_map = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 256, 96, 16, 16 )
+_sections_unfolded = [ "Region", "Visibility" ]
+
+

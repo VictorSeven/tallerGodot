@@ -1,0 +1,23 @@
+The characters are partly animated; the first four frames are for walk animation, while the others are for jumping (see edit below). There's also a badly refined slash effect
+
+ 
+
+EDIT: added some animation as requested by cdoty - thanks to him for his donation towards this addition. Now the animations are (numbering frames from 1 to 14):
+
+    WALK: frames 1,2,3,4, cycle
+    JUMP: frame 5 for "jump preparation", frame 6 for moving upwards, frame 7 for moving downards and frame 8 for landing
+    HIT: frames 9,10,9
+    SLASH: frames 11,12,13 (you might use them in the order 12,11,12,13 if you want an extra "preparation" frame before the actual slash)
+    PUNCH: 14,12 (again, you might use them in the order 12,14,12)
+
+Once more, thanks to cdoty for his contribution.  EDIT 2: added even more animations and some objects, thanks to KingAkwasi's donation. New animations are:
+
+    RUN: 15-18
+    CLIMB: 19-22
+    a single frame with character's back (frame 23)
+
+I also added some decorative objects which you can see in sheet.png.
+
+Enjoy!
+Copyright/Attribution Notice: 
+NOT REQUIRED, though appreciated: credit me as Buch and link back either to my OGA profile page or to http://blog-buch.rhcloud.com
